@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://mobileecgufc.web.app/">
-    <img src="https://user-images.githubusercontent.com/17098382/98701644-4401e080-2358-11eb-9c4d-9254350d1f7c.png" align="center" weight="100px"  margin="200px"/>
+    <img src="https://user-images.githubusercontent.com/17098382/98701644-4401e080-2358-11eb-9c4d-9254350d1f7c.png" align="center" width="500px"  margin="200px"/>
     </a>
 </p>
 
