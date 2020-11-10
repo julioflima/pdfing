@@ -1,18 +1,12 @@
 <p align="center">
-  <a href="https://mobileecgufc.web.app/">
-    <img src="https://user-images.githubusercontent.com/17098382/92084131-52061480-ed9d-11ea-9acd-ec209bbed243.png" align="center" weight="400px"  margin="200px"/>
-    </a>
-    <span align="center" weight="400px"  margin="200px">
-      ____________
-    </span>
-  <a href="http://www.ufc.br/">
-    <img src="https://user-images.githubusercontent.com/17098382/92084392-b45f1500-ed9d-11ea-8ec9-09c7f1283b2c.png" align="center" height="170px" padding="400"/>
+  <a href="#">
+    <img src="" align="center" weight="400px"  margin="200px"/>
   </a>
 </p>
 
 <h1 align="center">Mobile ECG</h1>
 <p align="left">
-  The <strong>HtmlToPdf</strong> module to from a HTML parse to a PDF documento. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with Enterprise quality.
+  The <strong>HtmlToPdf</strong> module to from a HTML parse to a PDF documento. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality.
 </p>
 
 <p align="left">
