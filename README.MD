@@ -1,24 +1,35 @@
 <p align="center">
-  <a href="https://mobileecgufc.web.app/">
-    <img src="https://user-images.githubusercontent.com/17098382/98701644-4401e080-2358-11eb-9c4d-9254350d1f7c.png" align="center" width="500px"  margin="200px"/>
+  <a href="#">
+    <img src="https://user-images.githubusercontent.com/17098382/98701644-4401e080-2358-11eb-9c4d-9254350d1f7c.png" align="center" width="400px"  margin="200px"/>
     </a>
-</p>
-
-<h1 align="center">Mobile ECG</h1>
-<p align="left">
-  The <strong>HtmlToPdf</strong> module to from a HTML parse to a PDF documento. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality.
 </p>
 
 <p align="left">
   <h2 align="left">
     <a href="https://mobileecgufc.web.app/">
-      Demonstração
+      Demo
     </a>
 
   </h2>
   <p align="left">
    Você poderá selecionar o sensor e ver sua atualização em tempo real, clicando nesse <a href="https://mobileecgufc.web.app/">link</a>.
    </p>
+</p>
+
+## What is?
+A NodeJS module that converts Html files to PDFs.
+
+
+## How to install?
+
+```sh
+npm install -g markdown-pdf --ignore-scripts
+```
+
+## Can you talk more about?
+<h1 align="center">Html to PDF</h1>
+<p align="left">
+  The <strong>HtmlToPdf</strong> module to from a HTML parse to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality. Phantomjs renders the page and saves it to a PDF. You can even customise the style of the PDF by passing an optional path to your CSS _and_ you can pre-process your markdown file before it is converted to a PDF by passing in a pre-processing function, for templating.
 </p>
 
 <p align="left">
@@ -118,3 +129,18 @@
 > ```
 
 </p>
+
+
+## Inspired by who?
+
+Markdown PDF of Alan Shaw. [See also.](https://github.com/alanshaw/markdown-pdf)
+
+## Can I contribute?
+
+Feel free to dive in! [Open an issue](https://github.com/juloko/htmlToPdf/issues/new) or submit PRs.
+
+## License?
+
+[MIT](LICENCE) © Julio Lima
+
+
