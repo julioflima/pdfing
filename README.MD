@@ -4,17 +4,7 @@
     </a>
 </p>
 
-<p align="left">
-  <h2 align="left">
-    <a href="https://mobileecgufc.web.app/">
-      Demo
-    </a>
-
-  </h2>
-  <p align="left">
-   Você poderá selecionar o sensor e ver sua atualização em tempo real, clicando nesse <a href="https://mobileecgufc.web.app/">link</a>.
-   </p>
-</p>
+<h1 align="center">Html to PDF</h1>
 
 ## What is?
 A NodeJS module that converts Html files to PDFs.
@@ -27,7 +17,6 @@ npm install -g markdown-pdf --ignore-scripts
 ```
 
 ## Can you talk more about?
-<h1 align="center">Html to PDF</h1>
 <p align="left">
   The <strong>HtmlToPdf</strong> module to from a HTML parse to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality. Phantomjs renders the page and saves it to a PDF. You can even customise the style of the PDF by passing an optional path to your CSS _and_ you can pre-process your markdown file before it is converted to a PDF by passing in a pre-processing function, for templating.
 </p>
