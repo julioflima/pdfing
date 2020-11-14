@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/juloko/htmlToPdf.git"
+    "url": "https://github.com/juloko/pdfing.git"
   },
   "author": "Julio Lima",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/juloko/htmlToPdf/issues"
+    "url": "https://github.com/juloko/pdfing/issues"
   },
   "engines": {
     "node": ">=0.10.0"

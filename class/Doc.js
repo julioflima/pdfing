@@ -11,7 +11,7 @@ const fsSync = require('fs');
 const remarkClassy = require('remarkable-classy');
 const { PDFDocument } = require('pdf-lib');
 
-module.exports = class HtmlToPdf {
+module.exports = class Doc {
   constructor(docName, data) {
     // Constantes
     this.timestamp = new Date().getTime();

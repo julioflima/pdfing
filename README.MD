@@ -1,4 +1,4 @@
-<h1 align="center">Html to PDF</h1>
+<h1 align="center">PDFing</h1>
 
 <p align="center">
   <a href="#">
@@ -28,7 +28,7 @@ Markdown PDF of Alan Shaw. [See also.](https://github.com/alanshaw/markdown-pdf)
 
 ## Can I contribute?
 
-Feel free to dive in! [Open an issue](https://github.com/juloko/htmlToPdf/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/juloko/pdfing/issues/new) or submit PRs.
 
 ## License?
 
