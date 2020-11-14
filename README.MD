@@ -13,7 +13,7 @@ A NodeJS module that converts Html files to PDFs.
 ## How to install?
 
 ```sh
-npm install -g markdown-pdf --ignore-scripts
+npm install htmlToPdf --save
 ```
 
 ## Can you talk more about?
