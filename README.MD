@@ -18,7 +18,7 @@ npm install htmlToPdf --save
 
 ## Can you talk more about?
 <p align="left">
-  The <strong>HtmlToPdf</strong> module to from a HTML parse to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality. You can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. We gonna process your data and manipulate the html according with your data. And much more, see <strong>Do you have some examples?</strong> in below.
+  The <strong>HtmlToPdf</strong> module to from a HTML parse to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality. You can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
  </p>
 
 
