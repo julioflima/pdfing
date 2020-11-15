@@ -28,10 +28,19 @@ npm install pdfing --save
  </p>
 
 <h3 align="left">Inspired by who?</h3>
-Markdown PDF of Alan Shaw. [See also.](https://github.com/alanshaw/markdown-pdf)
+<div>
+  <span>Markdown PDF of Alan Shaw</span>
+  <a href="https://github.com/alanshaw/markdown-pdf">See also.</a>
+</div>
 
 <h3 align="left">Can I contribute?</h3>
-Feel free to dive in! [Open an issue](https://github.com/juloko/pdfing/issues/new) or submit PRs.
+
+<div>
+  <span>Feel free to dive in! <a href="https://github.com/juloko/pdfing/issues/new">Open an issue.</a> or submit PRs.</span>
+</div>
 
 <h3 align="left">License?</h3>
-[MIT](LICENCE) © Julio Lima
+<div>
+  <strong>MIT </strong><span>© Julio Lima <a href="https://github.com/juloko/pdfing/issues/new">Open an issue.</a> or submit PRs.</span>
+</div>
+
