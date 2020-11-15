@@ -21,6 +21,13 @@ npm install pdfing --save
 <p align="left">
   The <strong>PDFing</strong> is library to make a document parsing HTML to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality. Provided by CSS, you can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. (Disclaimer! In files, "header.html" and "footer.html" you could use yet CSS, but in this files the style must be local, declared inside of tags using styles='...') We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
  </p>
+ 
+ <p align="left">
+  Provided by <strong>CSS</strong>, you can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. (Disclaimer! In files, "header.html" and "footer.html" you could use yet CSS, but in this files the style must be local, declared inside of tags using styles='...') We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
+ </p>
+  <p align="left">
+  Provided by <strong>CSS</strong>, you can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. <strong>Disclaimer!</strong>  In files, "header.html" and "footer.html" you could use yet CSS, but in this files the style must be local, declared inside of tags using styles='...') We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
+ </p>
 
 ## Inspired by who?
 
