@@ -10,6 +10,7 @@
 A NodeJS module that converts Html files to PDFs.
 
 <h3 align="left">How to install?</h3>
+
 ```sh
 npm install pdfing --save
 ```
