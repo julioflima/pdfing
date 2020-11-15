@@ -7,8 +7,8 @@
 </p>
 
 ## What is?
-A NodeJS module that converts Html files to PDFs.
 
+A NodeJS module that converts Html files to PDFs.
 
 ## How to install?
 
@@ -17,10 +17,10 @@ npm install pdfing --save
 ```
 
 ## Can you talk more about?
-<p align="left">
-  The <strong>PDFing</strong> module to from a HTML parse to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality. You can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
- </p>
 
+<p align="left">
+  The <strong>PDFing</strong> is library to make a document parsing HTML to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality. Provided by CSS, you can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. (Disclaimer! In files, "header.html" and "footer.html" you could use yet CSS, but in this files the style must be local, declared inside of tags using styles='...') We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
+ </p>
 
 ## Inspired by who?
 
@@ -33,5 +33,3 @@ Feel free to dive in! [Open an issue](https://github.com/juloko/pdfing/issues/ne
 ## License?
 
 [MIT](LICENCE) © Julio Lima
-
-
