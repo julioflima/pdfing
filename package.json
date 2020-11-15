@@ -1,7 +1,7 @@
 {
   "name": "pdfing",
   "version": "0.0.8",
-  "description": "A module to from a HTML parse to a PDF documento. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with Enterprize quality.",
+  "description": "The PDFing is library to make a document parsing HTML to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with Enterprise quality.",
   "main": "index.js",
   "scripts": {
     "start": "",
