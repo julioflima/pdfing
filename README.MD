@@ -6,15 +6,15 @@
     </a>
 </p>
 
-<h3 align="center">What is?</h3>
+<h3 align="left">What is?</h3>
 A NodeJS module that converts Html files to PDFs.
 
-<h3 align="center">How to install?</h3>
+<h3 align="left">How to install?</h3>
 ```sh
 npm install pdfing --save
 ```
 
-<h3 align="center">Can you talk more about?</h3>
+<h3 align="left">Can you talk more about?</h3>
 <p align="left">
   The <strong>PDFing</strong> is library to make a document parsing HTML to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality.
  </p>
@@ -26,11 +26,11 @@ npm install pdfing --save
    We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
  </p>
 
-<h3 align="center">Inspired by who?</h3>
+<h3 align="left">Inspired by who?</h3>
 Markdown PDF of Alan Shaw. [See also.](https://github.com/alanshaw/markdown-pdf)
 
-<h3 align="center">Can I contribute?</h3>
+<h3 align="left">Can I contribute?</h3>
 Feel free to dive in! [Open an issue](https://github.com/juloko/pdfing/issues/new) or submit PRs.
 
-<h3 align="center">License?</h3>
+<h3 align="left">License?</h3>
 [MIT](LICENCE) © Julio Lima
