@@ -1,0 +1,157 @@
+<body>
+  <div class="titulo">
+    <h6>REPORT</h6>
+  </div>
+  <div class="card">
+    <div class="card-titulo">Informations</div>
+    <div class="sessao">
+      <span class="campos [class_guia_id]">
+        <span>Id:</span>
+        <span class="texto">[guia_id]</span>
+      </span>
+      <span class="campos [class_local_atendimento]">
+        <span>Local:</span>
+        <span class="texto">[local_atendimento]</span>
+      </span>
+      <span class="campos [class_data_agendamento]">
+        <span>Data:</span>
+        <span class="texto">[data_agendamento]</span>
+      </span>
+      <span class="campos [class_hora]">
+        <span>Hora:</span>
+        <span class="texto">[hora]</span>
+      </span>
+      <span class="campos [class_atestado]">
+        <span>Atestado:</span>
+        <span class="texto">[atestado]</span>
+      </span>
+      <span class="campos [class_encaminhamento]">
+        <span>Encaminhamento:</span>
+        <span class="texto">[encaminhamento]</span>
+      </span>
+      <span class="campos [class_pedido_exames]">
+        <span>Pedido de Exames:</span>
+        <span class="texto">[pedido_exames]</span>
+      </span>
+      <span class="campos [class_especialidade]">
+        <span>Especialidade:</span>
+        <span class="texto">[especialidade]</span>
+      </span>
+    </div>
+  </div>
+  <div class="card [class_paciente]">
+    <div class="card-titulo">Paciente</div>
+    <div class="sessao">
+      <span class="campos [class_paciente]">
+        <span>Paciente:</span>
+        <span class="texto">[paciente]</span>
+      </span>
+      <span class="campos [class_data_nascimento]">
+        <span>Data de Nasc.:</span>
+        <span class="texto">[data_nascimento]</span>
+      </span>
+      <span class="campos [class_sexo]">
+        <span>Sexo:</span>
+        <span class="texto">[sexo]</span>
+      </span>
+      <span class="campos [class_idade]">
+        <span>Idade:</span>
+        <span class="texto">[idade]</span>
+      </span>
+      <span class="campos [class_cpf]">
+        <span>CPF:</span>
+        <span class="texto">[cpf]</span>
+      </span>
+      <span class="campos [class_telefone]">
+        <span>Telefone:</span>
+        <span class="texto">[telefone]</span>
+      </span>
+      <span class="campos [class_plano]">
+        <span>Plano:</span>
+        <span class="texto">[plano]</span>
+      </span>
+      <span class="campos [class_dlp]">
+        <span>DLP:</span>
+        <span class="texto">[dlp]</span>
+      </span>
+      <span class="campos [class_linhas_de_cuidado]">
+        <span>Linhas de Cuidado:</span>
+        <span>[linhas_de_cuidado]</span>
+      </span>
+    </div>
+  </div>
+  <div class="card [class_classificacao_risco]">
+    <div class="card-titulo">classificação de risco</div>
+    <table class="vitais">
+      <thead>
+        <tr>
+          <th>Data e Hora</th>
+          <th>Risco</th>
+          <th>Peso (kg)</th>
+          <th>Altura (m)</th>
+          <th>IMC (kg/m²)</th>
+          <th>Temp. (ºC)</th>
+          <th>PA (mmHg)</th>
+          <th>Freq. Card. (bpm)</th>
+          <th>Freq. Resp. (rpm)</th>
+          <th>Sat. (O₂)</th>
+          <th>Glicemia (mg/dl)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <span>[classificacao_risco]</span>
+      </tbody>
+    </table>
+    <div class="sessao">
+      <span class="campos [class_observacao_classificacao]">
+        <span>Observação:</span>
+        <span class="texto">[observacao_classificacao]</span>
+      </span>
+    </div>
+  </div>
+  <div class="card [class_cid] [class_observacao_cids]">
+    <div class="card-titulo">Hipótese diagnóstica / CID</div>
+    <div class="sessao">
+      <span class="campos [class_cid]">
+        <span class="texto cids">[cids] </span>
+      </span>
+      <br />
+      <span class="campos [class_observacao_cids]">
+        <span>Observação:</span>
+        <span class="texto">[observacao_cids]</span>
+      </span>
+    </div>
+  </div>
+  <div class="card [class_queixa]">
+    <div class="card-titulo">Relato Paciente</div>
+    <div class="sessao">
+      <span class="campos [class_queixa]">
+        <span>Queixa Principal:</span>
+        <span class="texto">[queixa]</span>
+      </span>
+      <span class="campos [class_tempo_doenca]">
+        <span>Tempo da Doença:</span>
+        <span class="texto">[tempo_doenca]</span>
+      </span>
+      <br />
+      <span class="campos [class_observacao_queixa]">
+        <span>Observação:</span>
+        <span class="texto">[observacao_queixa]</span>
+      </span>
+    </div>
+  </div>
+  <div class="card [class_evolucoes]">
+    <div class="card-titulo">Evolução</div>
+    <div class="sessao">
+      <span class="campos"> [evolucoes] </span>
+    </div>
+  </div>
+  <div class="card [class_prescricoes]">
+    <div class="card-titulo">Prescrição</div>
+    <div class="sessao">
+      <span class="campos"> [prescricoes] </span>
+    </div>
+  </div>
+  <img style="display: none" src="[header_image]" />
+  <link rel="stylesheet" href="style.css" />
+</body>

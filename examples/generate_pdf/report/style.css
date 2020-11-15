@@ -1,0 +1,185 @@
+td,
+th,
+h1,
+span,
+p,
+table,
+thead,
+a {
+  font-family: Ubuntu, Arial, Tahoma, Helvetica, sans-serif !important;
+}
+
+body {
+  border: 0;
+  margin: 0;
+  margin: 10px 30px 0px 30px;
+  white-space: initial;
+}
+
+.titulo {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+
+.titulo h6 {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.card {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px,
+    rgba(0, 0, 0, 0.2) 0px 2px 1px -1px;
+}
+
+.mini-card {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin: 0 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px,
+    rgba(0, 0, 0, 0.2) 0px 2px 1px -1px;
+}
+
+.msg-hora {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-titulo {
+  color: #8f8f8f;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.badge {
+  padding: 5px;
+  font-size: 8px;
+  font-weight: 500;
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px,
+    rgba(0, 0, 0, 0.2) 0px 2px 1px -1px; */
+  margin-right: 5px;
+}
+
+.blue {
+  background-color: #039be5;
+  color: white;
+}
+
+.campos {
+  text-align: justify;
+}
+
+.sessao .campos {
+  font-weight: 600;
+  font-size: 8px;
+  padding-right: 5px;
+}
+
+.campos .texto {
+  font-weight: 100;
+  text-align: justify;
+}
+
+.vitais {
+  padding-top: 20px;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.vitais thead {
+  border-bottom: solid #ececec 1px;
+}
+
+.vitais body tr {
+  line-height: 25px;
+}
+
+.vitais th {
+  font-size: 8px;
+  font-weight: 500;
+  color: #757575;
+  align-items: center;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.vitais td {
+  align-items: center;
+  text-align: center;
+  font-size: 8px;
+}
+
+.traco {
+  font-size: 8px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 5px;
+  border-top: solid #cfcfcf 1px;
+  width: 300px;
+}
+
+.data {
+  margin-bottom: 60px;
+  text-align: right;
+}
+
+.material-utilizado {
+  border-bottom: solid #cfcfcf 1px;
+  display: inline;
+}
+
+.hr {
+  margin-top: 15px;
+  border-bottom: solid #ececec 1px;
+  width: 100%;
+}
+
+.hr:last-child {
+  margin-bottom: 8px;
+}
+
+.endereco {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.telefone {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.footer {
+  padding-top: 70px;
+  right: 0px;
+  height: 100px;
+  line-height: 10px;
+  bottom: -120px;
+}
+
+.footer .sessao {
+  width: fit-content;
+  float: right;
+}
+
+.footer .campos {
+  padding-top: 0;
+  padding-right: 0;
+}
+
+.cids {
+  display: flex;
+  flex-direction: column-reverse;
+}
