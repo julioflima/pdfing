@@ -23,7 +23,13 @@ config/constantes.js
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
+# NPM
+package-json.lock
+
 # Yarn
+yarn.lock
+yarn-error.log
+
 
 # Gradle
 .idea/**/gradle.xml
