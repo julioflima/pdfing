@@ -23,7 +23,7 @@ A NodeJS module that converts Html files to PDFs.
     Provided by <strong>CSS</strong>, you can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. <strong>Disclaimer!</strong>  In files, <i>header.html</i> and <i>footer.html</i> you could use yet CSS, but in this files the style must be local, declared inside of tags using <code>styles='...'</code>. 
   </p>
   <p align="left">
-    We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
+    We gonna process your data and stylize the <strong>HTML</strong> according with your data. And much more, see, <i>Do you have some examples?</i> in below.
   </p>
 </div>
 
