@@ -34,7 +34,7 @@ A NodeJS module that converts Html files to PDFs.
 
 <h3 align="left">Can I contribute?</h3>
 <div>
-  <span>Feel free to dive in! <a href="https://github.com/juloko/pdfing/issues/new">Open an issue.</a> or submit PRs.</span>
+  <span>Feel free to dive in! <a href="https://github.com/juloko/pdfing/issues/new">Open an issue</a> or submit PRs.</span>
 </div>
 
 <h3 align="left">License?</h3>
