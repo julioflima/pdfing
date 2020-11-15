@@ -1,6 +1,6 @@
 {
   "name": "pdfing",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A module to from a HTML parse to a PDF documento. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with Enterprize quality.",
   "main": "index.js",
   "scripts": {
