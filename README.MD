@@ -30,7 +30,7 @@ A NodeJS module that converts Html files to PDFs.
 <h3 align="left">Do you have some examples?</h3>
 <code>...in...soon...</code>
 
-<h3 align="left">Issue using on Docker?</h3>
+<h3 align="left">Issue using on Docker or Linux?</h3>
 <code>...in...soon...</code>
 
 <h3 align="left">Inspired by who?</h3>
