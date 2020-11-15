@@ -6,37 +6,31 @@
     </a>
 </p>
 
-## What is?
-
+<h3 align="center">What is?</h3>
 A NodeJS module that converts Html files to PDFs.
 
-## How to install?
-
+<h3 align="center">How to install?</h3>
 ```sh
 npm install pdfing --save
 ```
 
-## Can you talk more about?
-
+<h3 align="center">Can you talk more about?</h3>
 <p align="left">
-  The <strong>PDFing</strong> is library to make a document parsing HTML to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality. Provided by CSS, you can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. (Disclaimer! In files, "header.html" and "footer.html" you could use yet CSS, but in this files the style must be local, declared inside of tags using styles='...') We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
+  The <strong>PDFing</strong> is library to make a document parsing HTML to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with <strong>Enterprise</strong> quality.
  </p>
  
  <p align="left">
-  Provided by <strong>CSS</strong>, you can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. (Disclaimer! In files, "header.html" and "footer.html" you could use yet CSS, but in this files the style must be local, declared inside of tags using styles='...') We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
+   Provided by <strong>CSS</strong>, you can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. <strong>Disclaimer!</strong>  In files, "header.html" and "footer.html" you could use yet CSS, but in this files the style must be local, declared inside of tags using styles='...'. 
  </p>
   <p align="left">
-  Provided by <strong>CSS</strong>, you can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. <strong>Disclaimer!</strong>  In files, "header.html" and "footer.html" you could use yet CSS, but in this files the style must be local, declared inside of tags using styles='...') We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
+   We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
  </p>
 
-## Inspired by who?
-
+<h3 align="center">Inspired by who?</h3>
 Markdown PDF of Alan Shaw. [See also.](https://github.com/alanshaw/markdown-pdf)
 
-## Can I contribute?
-
+<h3 align="center">Can I contribute?</h3>
 Feel free to dive in! [Open an issue](https://github.com/juloko/pdfing/issues/new) or submit PRs.
 
-## License?
-
+<h3 align="center">License?</h3>
 [MIT](LICENCE) © Julio Lima
