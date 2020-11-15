@@ -19,7 +19,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "homepage": "#",
+  "homepage": "https://github.com/juloko/pdfing",
   "devDependencies": {
     "eslint": "^7.5.0",
     "eslint-config-airbnb": "^18.2.0",
