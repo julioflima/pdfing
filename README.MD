@@ -31,7 +31,9 @@ A NodeJS module that converts Html files to PDFs.
 <code>...in...soon...</code>
 
 <h3 align="left">Issue using on Docker or Linux?</h3>
-<code>...in...soon...</code>
+<div>
+  <span>If are having this problem, click <a href="https://github.com/juloko/pdfing/wiki#step1">HERE</a> to resolve this one of all.</span> 
+</div>
 
 <h3 align="left">Inspired by who?</h3>
 <div>
