@@ -27,6 +27,8 @@ A NodeJS module that converts Html files to PDFs.
   </p>
 </div>
 
+<h3 align="left">Do you have some examples?</h3>
+
 <h3 align="left">Inspired by who?</h3>
 <div>
   <span>Markdown PDF of Alan Shaw. <a href="https://github.com/alanshaw/markdown-pdf">See also.</a></span>
