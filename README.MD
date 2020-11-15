@@ -41,6 +41,6 @@ npm install pdfing --save
 
 <h3 align="left">License?</h3>
 <div>
-  <strong>MIT </strong><span>© Julio Lima <a href="https://github.com/juloko/pdfing/issues/new">Open an issue.</a> or submit PRs.</span>
+  <strong>MIT </strong><span>© Julio Lima
 </div>
 
