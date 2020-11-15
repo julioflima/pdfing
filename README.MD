@@ -21,7 +21,7 @@ npm install pdfing --save
  </p>
  
  <p align="left">
-   Provided by <strong>CSS</strong>, you can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. <strong>Disclaimer!</strong>  In files, "header.html" and "footer.html" you could use yet CSS, but in this files the style must be local, declared inside of tags using styles='...'. 
+   Provided by <strong>CSS</strong>, you can even customise the style of the PDF adding the file <i>style.css</i> to the root of your project. <strong>Disclaimer!</strong>  In files, "header.html" and "footer.html" you could use yet CSS, but in this files the style must be local, declared inside of tags using <code>styles='...'</code>. 
  </p>
   <p align="left">
    We gonna process your data and manipulate the html according with your data. And much more, see, <i>Do you have some examples?</i> in below.
