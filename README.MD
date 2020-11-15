@@ -11,7 +11,7 @@ A NodeJS module that converts Html files to PDFs.
 
 <h3 align="left">How to install?</h3>
 <div>
-  <span><code>npm install pdfing --save</code> or <code>yarn add pdfing --save</code></span>
+  <span><code>npm install pdfing --save</code> or <code>yarn add pdfing --save</code>.</span>
 <div>
 
 <h3 align="left">Can you talk more about?</h3>
@@ -32,7 +32,7 @@ A NodeJS module that converts Html files to PDFs.
 
 <h3 align="left">Issue using on Docker or Linux?</h3>
 <div>
-  
+  <span>If are having this problem, click <a href="https://github.com/juloko/pdfing/wiki#step1">HERE</a> to resolve it once and for all.</span> 
 </div>
 
 <h3 align="left">Inspired by who?</h3>
