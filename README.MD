@@ -29,7 +29,7 @@ A NodeJS module that converts Html files to PDFs.
 
 <h3 align="left">Inspired by who?</h3>
 <div>
-  <span>Markdown PDF of Alan Shaw <a href="https://github.com/alanshaw/markdown-pdf">See also.</a></span>
+  <span>Markdown PDF of Alan Shaw. <a href="https://github.com/alanshaw/markdown-pdf">See also.</a></span>
 </div>
 
 <h3 align="left">Can I contribute?</h3>
@@ -39,6 +39,6 @@ A NodeJS module that converts Html files to PDFs.
 
 <h3 align="left">License?</h3>
 <div>
-  <strong>MIT </strong><span>© Julio Lima
+  <span><strong>MIT</strong> © Julio Lima</span>
 </div>
 
