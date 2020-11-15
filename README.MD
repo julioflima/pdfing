@@ -28,6 +28,7 @@ A NodeJS module that converts Html files to PDFs.
 </div>
 
 <h3 align="left">Do you have some examples?</h3>
+<code>...in...soon...</code>
 
 <h3 align="left">Inspired by who?</h3>
 <div>
