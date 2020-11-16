@@ -1,7 +1,11 @@
 module.exports = class Process {
-  constructor(docName, data) {
+  constructor(data) {
+    this.data = data;
 
+    return this.process();
   }
 
-  
+  process() {
+    return this.data;
+  }
 };

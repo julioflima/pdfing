@@ -11,7 +11,7 @@ const fsSync = require('fs');
 const remarkClassy = require('remarkable-classy');
 const { PDFDocument } = require('pdf-lib');
 
-module.exports = class Doc {
+module.exports = class Pdf {
   constructor(options, data) {
     // Get params.
     this.path = options.path;
