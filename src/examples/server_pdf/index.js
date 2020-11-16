@@ -1,12 +1,28 @@
 const Pdfing = require('pdfing');
 
-const { Routes, App } = require('./server');
+const { Routes, App } = require('./app');
 const data = require('./data');
 
-const controller = (req,res)=>{
+const controller = async (req, res) => {
   try {
+    this.path = options.path;
+    this.paperFormat = options.paperFormat || 'A4';
+    this.heightHeader = options.heightHeader || '2cm';
+    this.heightFooter = options.heightFooter || '2cm';
+    this.notDeleteFiles = options.notDeleteFiles || false;
 
-    const { file, size } = await new Pdfing.get(data);
+    const doc = new Pdfing(
+      {
+        path: '',
+        paperFormat: 'A4',
+        heightHeader: '1.8cm',
+        heightFooter: '1.5cm',
+        notDeleteFiles: false,
+      },
+      data
+    );
+
+    const { file, size } = await doc.get();
 
     res.setHeader('Content-Length', size);
     res.setHeader('Content-Type', 'application/pdf');
@@ -21,8 +37,7 @@ const controller = (req,res)=>{
       message_debug: err.message,
     });
   }
-}
-
+};
 
 const routes = new Routes(controller);
 const app = new App(routes).server;
