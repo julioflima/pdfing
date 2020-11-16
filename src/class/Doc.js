@@ -11,7 +11,7 @@ const fsSync = require('fs');
 const remarkClassy = require('remarkable-classy');
 const { PDFDocument } = require('pdf-lib');
 
-module.exports = class Pdf {
+module.exports = class Doc {
   constructor(options, data) {
     // Get params.
     this.path = options.path;
@@ -48,19 +48,19 @@ module.exports = class Pdf {
     this.nameFile = `document-${this.timestamp}.pdf`;
     this.nameFileMerged = `documents-merged-${this.timestamp}.pdf`;
 
-    this.pathRepo = path.resolve(this.path);
-    this.pathImages = path.join(this.pathRepo, 'pics.json');
+    this.path = this.path;
+    this.pathImages = path.join(this.path, 'pics.json');
 
-    this.pathTemp = path.join(this.pathRepo, 'tmp', 'pdf');
-    this.pathTempPdf = path.join(this.pathRepo, 'tmp', 'pdf');
-    this.pathTempHtml = path.join(this.pathRepo, 'tmp', 'html');
-    this.pathTempJs = path.join(this.pathRepo, 'tmp', 'js');
+    this.pathTemp = path.join(this.path, 'tmp', 'pdf');
+    this.pathTempPdf = path.join(this.path, 'tmp', 'pdf');
+    this.pathTempHtml = path.join(this.path, 'tmp', 'html');
+    this.pathTempJs = path.join(this.path, 'tmp', 'js');
 
-    this.pathOriginalIndex = path.join(this.pathRepo, this.nameIndexOriginal);
-    this.nameOriginalRunnings = path.join(this.pathRepo, this.nameFileRunnings);
-    this.pathOriginalCss = path.join(this.pathRepo, this.nameFileCss);
-    this.pathOriginalHeader = path.join(this.pathRepo, this.nameFileHeader);
-    this.pathOriginalFooter = path.join(this.pathRepo, this.nameFileFooter);
+    this.pathOriginalIndex = path.join(this.path, this.nameIndexOriginal);
+    this.nameOriginalRunnings = path.join(this.path, this.nameFileRunnings);
+    this.pathOriginalCss = path.join(this.path, this.nameFileCss);
+    this.pathOriginalHeader = path.join(this.path, this.nameFileHeader);
+    this.pathOriginalFooter = path.join(this.path, this.nameFileFooter);
 
     this.pathNewIndex = path.join(this.pathTempHtml, this.nameIndexNew);
     this.nameNewRunnings = path.join(this.pathTempJs, this.nameRunningsNew);
@@ -97,14 +97,14 @@ module.exports = class Pdf {
   }
 
   findRootDir() {
-    if (fsSync.existsSync(this.pathRepo))
-      throw new Error(`Not found directory on this path:\n ${this.pathRepo}`);
+    if (fsSync.existsSync(this.path))
+      throw new Error(`Not found directory on this path:\n ${this.path}`);
   }
 
   findIndex() {
     if (fsSync.existsSync(this.pathOriginalIndex)) return true;
 
-    throw new Error(`Not found "index.html" in directory on this path:\n ${this.pathRepo}`);
+    throw new Error(`Not found "index.html" in directory on this path:\n ${this.path}`);
   }
 
   createTempDirs() {

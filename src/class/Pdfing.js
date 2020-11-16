@@ -1,4 +1,4 @@
-const Pdf = require('./Doc');
+const Doc = require('./Doc');
 const Process = require('./Process');
 
 module.exports = class Pdfing {
@@ -6,7 +6,7 @@ module.exports = class Pdfing {
     this.options = options;
     this.data = data;
 
-    this.Pdf = Pdf;
+    this.Pdf = Doc;
     this.Process = Process;
 
     return this.init();
@@ -14,7 +14,7 @@ module.exports = class Pdfing {
 
   init() {
     const processedData = new this.Process(this.data);
-    const pdf = new this.Pdf(this.options, processedData);
+    const pdf = new this.Doc(this.options, processedData);
 
     return pdf;
   }
