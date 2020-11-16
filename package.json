@@ -1,6 +1,6 @@
 {
   "name": "pdfing",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "The PDFing is library to make a document parsing HTML to a PDF document. From a directory containing, HTML, CSS, JS and images in Base 64, produce an PDF document with Enterprise quality.",
   "main": "src/index.js",
   "scripts": {
@@ -36,6 +36,5 @@
     "markdown-pdf": "^10.0.0",
     "pdf-lib": "^1.11.2",
     "remarkable-classy": "0.0.1"
-
   }
 }
