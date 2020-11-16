@@ -8,15 +8,13 @@ const controller = async (req, res) => {
   try {
     const pdfPath = path.resolve('./report');
 
-    console.log(pdfPath);
-
     const doc = new Pdfing(
       {
-        path: path.resolve('./report'),
+        path: pdfPath,
         paperFormat: 'A4',
         heightHeader: '1.8cm',
         heightFooter: '1.5cm',
-        notDeleteFiles: false,
+        notDeleteFiles: true,
       },
       data
     );

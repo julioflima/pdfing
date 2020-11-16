@@ -37,35 +37,39 @@ module.exports = class Doc {
     this.nameExtension = 'html';
 
     this.nameFileCss = 'style.css';
-    this.nameFileRunnings = 'runnings.js';
-    this.nameFileHeader = 'header.html';
-    this.nameFileFooter = 'footer.html';
 
     this.nameIndexOriginal = `index.${this.nameExtension}`;
     this.nameIndexNew = `index-${this.timestamp}.${this.nameExtension}`;
+
+    this.nameHeaderOriginal = `header.${this.nameExtension}`;
+    this.nameHeaderNew = `header-${this.timestamp}.${this.nameExtension}`;
+
+    this.nameFooterOriginal = `footer.${this.nameExtension}`;
+    this.nameFooterNew = `footer-${this.timestamp}.${this.nameExtension}`;
+
     this.nameRunningsNew = `runnings-${this.timestamp}.js`;
 
     this.nameFile = `document-${this.timestamp}.pdf`;
     this.nameFileMerged = `documents-merged-${this.timestamp}.pdf`;
 
-    this.path = this.path;
     this.pathImages = path.join(this.path, 'pics.json');
 
-    this.pathTemp = path.join(this.path, 'tmp', 'pdf');
+    this.pathTemp = path.join(this.path, 'tmp');
     this.pathTempPdf = path.join(this.path, 'tmp', 'pdf');
     this.pathTempHtml = path.join(this.path, 'tmp', 'html');
     this.pathTempJs = path.join(this.path, 'tmp', 'js');
 
     this.pathOriginalIndex = path.join(this.path, this.nameIndexOriginal);
-    this.nameOriginalRunnings = path.join(this.path, this.nameFileRunnings);
     this.pathOriginalCss = path.join(this.path, this.nameFileCss);
-    this.pathOriginalHeader = path.join(this.path, this.nameFileHeader);
-    this.pathOriginalFooter = path.join(this.path, this.nameFileFooter);
+    this.pathOriginalHeader = path.join(this.path, this.nameHeaderOriginal);
+    this.pathOriginalFooter = path.join(this.path, this.nameFooterOriginal);
 
     this.pathNewIndex = path.join(this.pathTempHtml, this.nameIndexNew);
-    this.nameNewRunnings = path.join(this.pathTempJs, this.nameRunningsNew);
+    this.pathNewRunnings = path.join(this.pathTempJs, this.nameRunningsNew);
     this.pathNewFile = path.join(this.pathTempPdf, this.nameFile);
     this.pathNewMerged = path.join(this.pathTempPdf, this.nameFileMerged);
+    this.pathNewHeader = path.join(this.path, this.nameHeaderNew);
+    this.pathNewFooter = path.join(this.path, this.nameFooterNew);
 
     // Variables
     this.context = '';
@@ -75,14 +79,14 @@ module.exports = class Doc {
       exports.header = {
         height: '[heightHeader]',
         contents: function (__pageNumber, __numberPages) {
-          return __context_header;
+          return ('__context_header'.split('__pageNumber').join(__pageNumber).split('__pageNumber').join(__numberPages));
         },
       };
       
       exports.footer = {
         height: '[heightFooter]',
         contents: function (__pageNumber, __numberPages) {
-          return __context_footer;
+          return ('__context_footer'.split('__pageNumber').join(__pageNumber).split('__numberPages').join(__numberPages));
         },
       };
     `;
@@ -97,21 +101,21 @@ module.exports = class Doc {
   }
 
   findRootDir() {
-    if (fsSync.existsSync(this.path))
+    if (!fsSync.existsSync(this.path))
       throw new Error(`Not found directory on this path:\n ${this.path}`);
   }
 
   findIndex() {
-    if (fsSync.existsSync(this.pathOriginalIndex)) return true;
+    if (!fsSync.existsSync(this.pathOriginalIndex)) return true;
 
     throw new Error(`Not found "index.html" in directory on this path:\n ${this.path}`);
   }
 
   createTempDirs() {
-    if (!fsSync.existsSync(this.pathTemp)) fsSync.mkdirSync(pathTemp);
-    if (!fsSync.existsSync(this.pathTempPdf)) fsSync.mkdirSync(pathTempPdf);
-    if (!fsSync.existsSync(this.pathTempHtml)) fsSync.mkdirSync(pathTempHtml);
-    if (!fsSync.existsSync(this.pathTempJs)) fsSync.mkdirSync(pathTempJs);
+    if (!fsSync.existsSync(this.pathTemp)) fsSync.mkdirSync(this.pathTemp);
+    if (!fsSync.existsSync(this.pathTempPdf)) fsSync.mkdirSync(this.pathTempPdf);
+    if (!fsSync.existsSync(this.pathTempHtml)) fsSync.mkdirSync(this.pathTempHtml);
+    if (!fsSync.existsSync(this.pathTempJs)) fsSync.mkdirSync(this.pathTempJs);
   }
 
   findImages() {
@@ -147,7 +151,7 @@ module.exports = class Doc {
         syntax: ['footnote', 'sup', 'sub'],
       },
       cssPath: this.findStyles() ? this.pathOriginalCss : undefined,
-      runningsPath: this.existsStyles ? this.nameNewRunnings : undefined,
+      runningsPath: this.pathNewRunnings,
       paperFormat: this.paperFormat,
       paperOrientation: 'portrait',
       paperBorder: '0cm',
@@ -161,7 +165,6 @@ module.exports = class Doc {
     await this.getHeader();
     await this.getFooter();
     await this.updateRunnigs();
-    await this.createRunnigs();
     await this.saveRunnings();
 
     await this.getIndex();
@@ -224,8 +227,6 @@ module.exports = class Doc {
     if (existsImages) {
       const jsonString = await fs.readFile(this.pathImages);
       this.images = JSON.parse(jsonString);
-
-      this.data = { ...this.images, ...this.data };
     }
   }
 
@@ -235,22 +236,25 @@ module.exports = class Doc {
 
   async getHeader() {
     const existsHeader = this.findHeader();
-    if (existsHeader) this.contextHeader = await fs.readFile(this.nameOriginalHeader, 'utf8');
+    if (existsHeader) this.contextHeader = await fs.readFile(this.pathOriginalHeader, 'utf8');
   }
 
   async getFooter() {
     const existsFooter = this.findFooter();
-    if (existsFooter) this.contextFooter = await fs.readFile(this.nameOriginalFooter, 'utf8');
+    if (existsFooter) this.contextFooter = await fs.readFile(this.pathOriginalFooter, 'utf8');
   }
 
   async updateRunnigs() {
+    const contextHeader = this.contextHeader.split('\n').join('');
+    const contextFooter = this.contextFooter.split('\n').join('');
+
     let updatedRunnings = this.contextRunnings;
 
-    this.data = {
-      ...this.data,
-      __context_header: this.contextHeader,
-      __context_footer: this.contextHeader,
-    };
+    updatedRunnings = updatedRunnings
+      .split('__context_header')
+      .join(contextHeader)
+      .split('__context_footer')
+      .join(contextFooter);
 
     const chaves = Object.keys(this.data);
     chaves.forEach((chave) => {
@@ -265,7 +269,7 @@ module.exports = class Doc {
   }
 
   async saveRunnings() {
-    await fs.writeFile(this.nameNewRunnings, this.contextRunnings);
+    await fs.writeFile(this.pathNewRunnings, this.contextRunnings);
   }
 
   async getIndex() {
@@ -317,20 +321,11 @@ module.exports = class Doc {
     return this.instancePdf(this.pathNewFile);
   }
 
-  async deleteFiles(stopDelete = false) {
-    if (this.isToDeleteFiles || stopDelete) {
-      const error = (err) => {
-        if (err) throw err;
-      };
-
-      fs.rmdir(this.pathTemp, error);
-      fs.rmdir(this.pathTepathTempPdfmp, error);
-      fs.rmdir(this.pathTempHtml, error);
-      fs.rmdir(this.pathTempJs, error);
-
-      fs.unlink(this.nameNewRunnings, error);
-      fs.unlink(this.pathNewIndex, error);
-      fs.unlink(this.pathNewFile, error);
+  async deleteFiles() {
+    if (!this.notDeleteFiles) {
+      await fs.unlink(this.pathNewRunnings);
+      await fs.unlink(this.pathNewIndex);
+      await fs.unlink(this.pathNewFile);
     }
   }
 };

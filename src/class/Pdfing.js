@@ -6,7 +6,7 @@ module.exports = class Pdfing {
     this.options = options;
     this.data = data;
 
-    this.Pdf = Doc;
+    this.Doc = Doc;
     this.Process = Process;
 
     return this.init();
