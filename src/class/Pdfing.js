@@ -1,5 +1,5 @@
-const Pdf = require('./class/Pdf');
-const Process = require('./class/Process');
+const Pdf = require('./Pdf');
+const Process = require('./Process');
 
 module.exports = class Pdfing {
   constructor(options, data) {
