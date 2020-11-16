@@ -1,4 +1,4 @@
-const Pdf = require('./Pdf');
+const Pdf = require('./Doc');
 const Process = require('./Process');
 
 module.exports = class Pdfing {

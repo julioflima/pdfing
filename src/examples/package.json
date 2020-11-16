@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "pdfing": "^0.0.11"
+    "pdfing": "0.0.13"
   },
   "scripts": {
     "start": "nodejs index.js",
