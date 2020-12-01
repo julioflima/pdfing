@@ -7,7 +7,7 @@
     "celebrate": "^13.0.4",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "pdfing": "0.0.15"
+    "pdfing": "1.0.2"
   },
   "scripts": {
     "start": "nodejs index.js",

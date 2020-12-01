@@ -14,7 +14,7 @@ const controller = async (req, res) => {
         paperFormat: 'A4',
         heightHeader: '1.8cm',
         heightFooter: '1.5cm',
-        notDeleteFiles: true,
+        notDeleteFiles: false, // If you wanna see the document inside "report/tmp/pdf" change this to true.
       },
       data
     );
@@ -40,6 +40,9 @@ const routes = new Routes(controller);
 const app = new App(routes).server;
 
 app.listen(3000);
+
+console.log('Access the URL in below to generate the pdf.');
+console.log('http://localhost:3000/pdfing');
 
 // To see the document, access the URL in below:
 // http://localhost:3000/pdfing
